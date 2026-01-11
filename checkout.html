@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Mrr_E Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mrr_E<span>Books</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <p>Complete your purchase in just a few steps</p>
+        </div>
+    </div>
+
+    <!-- Checkout Process -->
+    <div class="container">
+        <div class="checkout-steps" style="display: flex; justify-content: center; margin-bottom: 40px;">
+            <div class="step active" style="text-align: center; padding: 0 20px;">
+                <div style="width: 40px; height: 40px; background-color: #D4A76A; color: white; border-radius: 50%; line-height: 40px; margin: 0 auto 10px;">1</div>
+                <span>Cart</span>
+            </div>
+            <div style="width: 60px; text-align: center; line-height: 40px; color: #D4A76A;">➔</div>
+            <div class="step active" style="text-align: center; padding: 0 20px;">
+                <div style="width: 40px; height: 40px; background-color: #D4A76A; color: white; border-radius: 50%; line-height: 40px; margin: 0 auto 10px;">2</div>
+                <span>Information</span>
+            </div>
+            <div style="width: 60px; text-align: center; line-height: 40px; color: #666;">➔</div>
+            <div class="step" style="text-align: center; padding: 0 20px;">
+                <div style="width: 40px; height: 40px; background-color: #F8F5F0; color: #666; border-radius: 50%; line-height: 40px; margin: 0 auto 10px;">3</div>
+                <span style="color: #666;">Payment</span>
+            </div>
+        </div>
+
+        <div class="checkout-container">
+            <!-- Checkout Form -->
+            <div class="checkout-form">
+                <h2>Billing Information</h2>
+                
+                <form id="checkout-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code *</label>
+                            <input type="text" id="zip" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" required>
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="GH">Ghana</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Order Notes (Optional)</label>
+                        <textarea id="notes" rows="3" placeholder="Special instructions for your order..."></textarea>
+                    </div>
+                    
+                    <h2 style="margin-top: 40px;">Shipping Method</h2>
+                    <div class="shipping-methods" style="margin: 20px 0;">
+                        <div class="shipping-method" style="display: flex; align-items: center; padding: 15px; background-color: #F8F5F0; margin-bottom: 10px; border-radius: 4px;">
+                            <input type="radio" id="standard" name="shipping" value="standard" checked style="margin-right: 15px;">
+                            <div>
+                                <label for="standard" style="font-weight: 600;">Standard Shipping</label>
+                                <p style="margin: 5px 0 0; color: #666;">5-7 business days • 5.00gh</p>
+                            </div>
+                        </div>
+                        <div class="shipping-method" style="display: flex; align-items: center; padding: 15px; background-color: #F8F5F0; border-radius: 4px;">
+                            <input type="radio" id="express" name="shipping" value="express" style="margin-right: 15px;">
+                            <div>
+                                <label for="express" style="font-weight: 600;">Express Shipping</label>
+                                <p style="margin: 5px 0 0; color: #666;">2-3 business days • 12.00gh</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 style="margin-top: 40px;">Payment Information</h2>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                            <label for="credit-card">Credit/Debit Card</label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <label for="paypal">PayPal</label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="cod" name="payment" value="cod">
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                    </div>
+                    
+                    <div id="credit-card-info" style="margin-top: 20px; padding: 20px; background-color: #F8F5F0; border-radius: 8px;">
+                        <div class="form-group">
+                            <label for="card-number">Card Number *</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date *</label>
+                                <input type="text" id="expiry" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvc">CVC *</label>
+                                <input type="text" id="cvc" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card *</label>
+                            <input type="text" id="card-name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 30px;">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms" style="display: inline; margin-left: 10px;">
+                            I agree to the <a href="#" style="color: #8B4513;">Terms and Conditions</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; padding: 15px; font-size: 1.1rem; margin-top: 20px;">
+                        Complete Order
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                
+                <div id="order-items">
+                    <!-- Items will be loaded from cart -->
+                    <div class="summary-item">
+                        <span>The Silent Forest</span>
+                        <span>100.99gh</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>The Girl Who Can</span>
+                        <span>121.50gh</span>
+                    </div>
+                </div>
+                
+                <div style="border-top: 2px solid #ddd; margin: 20px 0; padding-top: 20px;">
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span>222.49gh</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span>50.00gh</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax</span>
+                        <span>20.68gh</span>
+                    </div>
+                    <div class="summary-item" style="font-size: 1.2rem; font-weight: 700; color: #8B4513;">
+                        <span>Total</span>
+                        <span>293.17gh</span>
+                    </div>
+                </div>
+                
+                <div style="background-color: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                    <p style="margin: 0; color: #2e7d32;">
+                        <i class="fas fa-shipping-fast" style="margin-right: 10px;"></i>
+                        Free shipping on orders over 50gh!
+                    </p>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3>Need Help?</h3>
+                    <p style="color: #666; margin-top: 10px;">
+                        <i class="fas fa-phone" style="color: #D4A76A; margin-right: 10px;"></i>
+                        Call us: 053 015 5410
+                    </p>
+                    <p style="color: #666;">
+                        <i class="fas fa-envelope" style="color: #D4A76A; margin-right: 10px;"></i>
+                        Email: support@mrr_ebooks.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>PageTurner Books</h3>
+                    <p>Your gateway to literary adventures since 2024.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">All Books</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Library Street, Bookville</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@pageturnerbooks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PageTurner Books. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form submission
+            const checkoutForm = document.getElementById('checkout-form');
+            
+            checkoutForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(checkoutForm);
+                const orderData = {};
+                formData.forEach((value, key) => {
+                    orderData[key] = value;
+                });
+                
+                // Simulate order processing
+                const orderNumber = 'ORD' + Math.floor(Math.random() * 1000000);
+                
+                // Show success message
+                const successHTML = `
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <div style="width: 80px; height: 80px; background-color: #28A745; color: white; border-radius: 50%; line-height: 80px; margin: 0 auto 30px; font-size: 2rem;">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h2 style="color: #2C1810; margin-bottom: 15px;">Order Confirmed!</h2>
+                        <p style="color: #666; margin-bottom: 25px; font-size: 1.1rem;">
+                            Thank you for your purchase. Your order number is:
+                        </p>
+                        <div style="background-color: #F8F5F0; padding: 15px; border-radius: 8px; margin-bottom: 30px; display: inline-block;">
+                            <strong style="color: #8B4513; font-size: 1.2rem;">${orderNumber}</strong>
+                        </div>
+                        <p style="color: #666; margin-bottom: 30px;">
+                            A confirmation email has been sent to <strong>${orderData.email}</strong>.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                            <a href="index.html" class="btn">Continue Shopping</a>
+                            <a href="books.html" class="btn-small" style="background-color: #F8F5F0; color: #2C1810;">View Order Details</a>
+                        </div>
+                    </div>
+                `;
+                
+                // Replace form with success message
+                checkoutForm.innerHTML = successHTML;
+                
+                // Clear the cart
+                localStorage.removeItem('cart');
+                
+                // Update cart count
+                document.querySelectorAll('.cart-count').forEach(span => {
+                    span.textContent = '0';
+                });
+            });
+            
+            // Payment method toggle
+            const paymentMethods = document.querySelectorAll('input[name="payment"]');
+            const creditCardInfo = document.getElementById('credit-card-info');
+            
+            paymentMethods.forEach(method => {
+                method.addEventListener('change', function() {
+                    if (this.value === 'credit-card') {
+                        creditCardInfo.style.display = 'block';
+                    } else {
+                        creditCardInfo.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

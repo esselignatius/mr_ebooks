@@ -1,0 +1,94 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Mrr_E Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mrr_E<span>Books</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-icon active"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be loaded by JavaScript -->
+                    <tr id="empty-cart-message" style="display: none;">
+                        <td colspan="5" style="text-align: center; padding: 40px;">
+                            <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #D4A76A; margin-bottom: 20px; display: block;"></i>
+                            <h3>Your cart is empty</h3>
+                            <p>Add some books to get started!</p>
+                            <a href="books.html" class="btn" style="margin-top: 20px;">Browse Books</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">0.00gh</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span id="shipping">5.00gh</span>
+            </div>
+            <div class="summary-row">
+                <span>Tax:</span>
+                <span id="tax">0.00gh</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">0.00gh</span>
+            </div>
+            
+            <div class="cart-actions">
+                <a href="books.html" class="btn-small">Continue Shopping</a>
+                <a href="checkout.html" class="btn" id="checkout-btn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

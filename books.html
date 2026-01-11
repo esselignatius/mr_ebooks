@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection | Mrr_E Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mrr_E<span>Books</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html" class="active">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Books Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Book Collection</h1>
+            <p>Browse our carefully curated selection of books</p>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="filters container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All Books</button>
+            <button class="filter-btn" data-category="fiction">Fiction</button>
+            <button class="filter-btn" data-category="nonfiction">Non-Fiction</button>
+            <button class="filter-btn" data-category="sci-fi">Science Fiction</button>
+            <button class="filter-btn" data-category="fantasy">Fantasy</button>
+            <button class="filter-btn" data-category="mystery">Mystery</button>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="book-search" placeholder="Search books by title or author...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <!-- Book Listings -->
+    <section class="book-listings container">
+        <div class="books-grid">
+            <!-- Sample Books (10 total) -->
+            <div class="book-card" data-category="fiction" data-id="1">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="The Silent Forest">
+                <div class="book-info">
+                    <h3>The Silent Forest</h3>
+                    <p class="author">by Maria Rodriguez</p>
+                    <p class="price">100.99gh</p>
+                    <p class="description">A haunting tale of mystery in an isolated village.</p>
+                    <div class="book-actions">
+                        <a href="book-detail.html" class="btn-small">View Details</a>
+                        <button class="btn-small add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-category="sci-fi" data-id="2">
+                <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cosmic Echoes">
+                <div class="book-info">
+                    <h3>The Girl Who Can</h3>
+                    <p class="author">by Ama Ataa Aidoo</p>
+                    <p class="price">121.50gh</p>
+                    <p class="description">The resilient young lady who never gave up despite setbacks.</p>
+                    <div class="book-actions">
+                        <a href="book-detail.html" class="btn-small">View Details</a>
+                        <button class="btn-small add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-category="fantasy" data-id="3">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Urban Legends">
+                <div class="book-info">
+                    <h3>The Ripples</h3>
+                    <p class="author">by Peter Paul Adolinama</p>
+                    <p class="price">121.99gh</p>
+                    <p class="description">The teenager who tried to escape forced marriages plagued by her grandmother and mother.</p>
+                    <div class="book-actions">
+                        <a href="book-detail.html" class="btn-small">View Details</a>
+                        <button class="btn-small add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-category="nonfiction" data-id="4">
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="The History of Code">
+                <div class="book-info">
+                    <h3>The History of Code</h3>
+                    <p class="author">by Alex Thompson</p>
+                    <p class="price">124.99gh</p>
+                    <p class="description">From Ada Lovelace to quantum computing.</p>
+                    <div class="book-actions">
+                        <a href="book-detail.html" class="btn-small">View Details</a>
+                        <button class="btn-small add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-category="mystery" data-id="5">
+                <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Midnight Secrets">
+                <div class="book-info">
+                    <h3>Midnight Secrets</h3>
+                    <p class="author">by Robert Kane</p>
+                    <p class="price">116.75gh</p>
+                    <p class="description">A detective unravels a decades-old mystery.</p>
+                    <div class="book-actions">
+                        <a href="book-detail.html" class="btn-small">View Details</a>
+                        <button class="btn-small add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add 5 more book cards similarly -->
+            
+        </div>
+    </section>
+
+    <!-- Pagination (optional) -->
+    <div class="pagination container">
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">Next <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Mrr_E Books</h3>
+                    <p>Your gateway to literary adventures since 2024.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">All Books</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Harbour Road,Tema,Ghana</p>
+                    <p><i class="fas fa-phone"></i> 053 015 5410</p>
+                    <p><i class="fas fa-envelope"></i> info@mrr_ebooks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mrr_E Books. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/books.js"></script>
+</body>
+</html>

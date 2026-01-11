@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrr_E Books | Your Literary Escape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mrr_E<span>Books</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Escape Into Stories</h1>
+            <p>Discover your next favorite book from our curated collection of fiction, non-fiction, and classics.</p>
+            <a href="books.html" class="btn">Browse Collection</a>
+        </div>
+    </header>
+
+    <!-- Featured Books -->
+    <section class="featured container">
+        <h2 class="section-title">Featured This Month</h2>
+        <div class="books-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+                <div class="book-info">
+                    <h3>The Silent Forest</h3>
+                    <p class="author">by Maria Rodriguez</p>
+                    <p class="price">100.99gh</p>
+                    <a href="book-detail.html" class="btn-small">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+                <div class="book-info">
+                    <h3>The Girl Who Can</h3>
+                    <p class="author">by Ama Ataa Aidoo</p>
+                    <p class="price">121.50gh</p>
+                    <a href="book-detail.html" class="btn-small">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+                <div class="book-info">
+                    <h3>The Ripples</h3>
+                    <p class="author">by Peter Paul Adolinama</p>
+                    <p class="price">121.99gh</p>
+                    <a href="book-detail.html" class="btn-small">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse By Category</h2>
+            <div class="category-grid">
+                <a href="books.html?category=fiction" class="category-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Fiction</h3>
+                </a>
+                <a href="books.html?category=nonfiction" class="category-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Non-Fiction</h3>
+                </a>
+                <a href="books.html?category=sci-fi" class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Science Fiction</h3>
+                </a>
+                <a href="books.html?category=fantasy" class="category-card">
+                    <i class="fas fa-dragon"></i>
+                    <h3>Fantasy</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter container">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for new arrivals and exclusive deals.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Mrr_E Books</h3>
+                    <p>Your gateway to literary adventures since 2024.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">All Books</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Harbour Road, Tema,Ghana.</p>
+                    <p><i class="fas fa-phone"></i> 053 015 5410</p>
+                    <p><i class="fas fa-envelope"></i> info@mrr_ebooks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mrr_E Books. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
